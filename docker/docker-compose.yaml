@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  project-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: docker
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+    volumes:
+      - ./init.db:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"
+
+  backend-server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    volumes:
+      - ~/.aws/:/root/.aws/:ro
+    depends_on:
+      - project-db
+    ports:
+      - "8080:8080"

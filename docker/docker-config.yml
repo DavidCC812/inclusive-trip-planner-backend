@@ -1,0 +1,22 @@
+spring:
+  liquibase:
+    enabled: true
+    changelog: classpath:liquibase/docker/555-changelog-docker.xml
+    contexts: unity-dev
+
+  datasource:
+    url: jdbc:postgresql://db:5432/docker
+    username: docker
+    password: docker
+    continue-on-error: true
+    hikari:
+      connectionTimeout: 10000
+      idleTimeout: 30000
+      maximumPoolSize: 25
+      minimumIdle: 5
+      initialSize: 1
+      maxLifetime: 2000000
+      poolName: SpringBootJPAHikariCP
+
+logging:
+  config: file:./config/logback-spring.xml
