@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="add-user-country-access-paris" author="david">
+        <insert tableName="user_country_access">
+            <column name="id" value="99990000-0000-0000-0000-000000000001"/>
+            <column name="user_id" value="00000000-0000-0000-0000-000000009999"/>
+            <column name="country_id" value="00000000-0000-0000-0000-000000000010"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
