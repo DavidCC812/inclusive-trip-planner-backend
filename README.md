@@ -6,7 +6,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring--Boot-3.3.5-success.svg)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-informational.svg)
 
-Frontend repository: [inclusive-trip-planner-android](https://github.com/yourusername/inclusive-trip-planner-android)
+Frontend repository: [inclusive-trip-planner-frontend](https://github.com/DavidCC812/inclusive-trip-planner-frontend)
 
 ## Overview
 
@@ -42,6 +42,7 @@ Originally created as a thesis project under the internal name “moonshot-proje
 
 The backend follows a layered package-by-feature structure, organized as follows:
 
+```
 auth/              - JWT + Firebase-based authentication and token filters  
 config/            - Spring Security rules, CORS, and application config  
 controller/        - REST endpoints for each entity (User, Itinerary, etc.)  
@@ -53,6 +54,7 @@ liquibase/         - XML-based schema migrations (versioned and tracked)
 docker/            - Docker and Docker Compose files for local setup and CI  
 test/.../          - Integration tests (using H2) for each feature  
                    - Includes a shared cleanup component for data isolation
+```
 
 This structure ensures a clear separation between API exposure, business rules, and persistence. Docker is used to run the full stack locally and in CI/CD pipelines. The app is deployed to Render as a containerized service.
 
@@ -71,8 +73,10 @@ This structure ensures a clear separation between API exposure, business rules, 
 
 1. Clone the Repository
 
+   ```bash
    git clone <https://github.com/yourusername/inclusive-trip-planner-backend.git>  
    cd inclusive-trip-planner-backend
+   ```
 
 2. Configure Environment
 
@@ -122,7 +126,10 @@ It supports Firebase authentication and exposes secured REST endpoints used by t
 
 To run integration tests:
 
+    ```bash
    ./mvnw test
+
+   ```
 
 Tests are defined with `@SpringBootTest` and cover:
 
@@ -167,7 +174,7 @@ To verify availability, you can check the health endpoint:
 
 ## Contact
 
-David Cuahonte Cuevas  
-GitHub: <https://github.com/yourusername>  
-LinkedIn: <https://www.linkedin.com/in/yourprofile/>
+**David Cuahonte Cuevas**  
+[GitHub](https://github.com/DavidCC812)  
+[LinkedIn](https://www.linkedin.com/in/david-cuahonte-527781221/)
 >>>>>>> Stashed changes
