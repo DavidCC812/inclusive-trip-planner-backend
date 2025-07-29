@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="add-settings" author="david">
+        <insert tableName="settings">
+            <column name="id" value="00000000-0000-0000-0000-000000000301"/>
+            <column name="setting_key" value="receive_offers"/>
+            <column name="label" value="Receive Offers"/>
+            <column name="description" value="Receive promotional offers and discounts."/>
+            <column name="default_value" valueBoolean="false"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+
+        <insert tableName="settings">
+            <column name="id" value="00000000-0000-0000-0000-000000000302"/>
+            <column name="setting_key" value="notify_trip_completion"/>
+            <column name="label" value="Notify Trip Completion"/>
+            <column name="description" value="Get notified when a trip is marked completed."/>
+            <column name="default_value" valueBoolean="true"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+
+        <insert tableName="settings">
+            <column name="id" value="00000000-0000-0000-0000-000000000303"/>
+            <column name="setting_key" value="alert_accessibility"/>
+            <column name="label" value="Accessibility Alerts"/>
+            <column name="description" value="Get alerts for new accessibility options."/>
+            <column name="default_value" valueBoolean="true"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

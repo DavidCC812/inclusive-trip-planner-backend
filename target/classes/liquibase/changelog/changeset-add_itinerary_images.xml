@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="add-image-urls-to-itineraries" author="david">
+        <update tableName="itineraries">
+            <column name="image_url"
+                    value="https://www.thechesshotel.com/cache/img/43db49dc20496d6595d3667cb4e363d891ecd6a8-43db49-1024-383-landscape.jpeg"/>
+            <where>id = '11111111-1111-1111-1111-111111111111'</where>
+        </update>
+
+        <update tableName="itineraries">
+            <column name="image_url"
+                    value="https://cpbtlatgfa.cloudimg.io/www.paristoversailles.com/wp-content/uploads/dauphine-paris.jpg"/>
+            <where>id = '22222222-2222-2222-2222-222222222222'</where>
+        </update>
+
+        <update tableName="itineraries">
+            <column name="image_url"
+                    value="https://upload.wikimedia.org/wikipedia/commons/6/6d/Avenue_des_Champs-%C3%89lys%C3%A9es_July_24%2C_2009_N1.jpg"/>
+            <where>id = '33333333-3333-3333-3333-333333333333'</where>
+        </update>
+
+        <update tableName="itineraries">
+            <column name="image_url"
+                    value="https://medias.moulinrouge.fr/app/uploads/2023/08/maison_rose_resize.jpg"/>
+            <where>id = '44444444-4444-4444-4444-444444444444'</where>
+        </update>
+
+        <update tableName="itineraries">
+            <column name="image_url"
+                    value="https://upload.wikimedia.org/wikipedia/commons/2/26/Pont_au_Change_and_Palais_de_justice%2C_Paris_20_April_2021_001.jpg"/>
+            <where>id = '55555555-5555-5555-5555-555555555555'</where>
+        </update>
+    </changeSet>
+</databaseChangeLog>

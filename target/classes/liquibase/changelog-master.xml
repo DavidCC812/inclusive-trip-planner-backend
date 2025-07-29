@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="changelog/changeset-init.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_accessibility_features.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_countries.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_paris_destinations_for_chip_types.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_default_itineraries.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_itinerary_steps.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_itinerary_accessibility_features.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_demo_user.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_user_country_access_paris.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_settings.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_user_settings.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_saved_itineraries.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_user_accessibility_features_demo.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_reviews_demo.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_user_selected_destinations_demo.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changeset-add_itinerary_images.xml" relativeToChangelogFile="true"/>
+
+
+
+
+
+
+
+
+</databaseChangeLog>
