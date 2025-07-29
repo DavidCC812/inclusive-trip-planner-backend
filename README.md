@@ -118,7 +118,7 @@ All authenticated routes require a valid JWT in the `Authorization` header. A Fi
 
 This backend is consumed by the official Android frontend:
 
-[inclusive-trip-planner-android](https://github.com/yourusername/inclusive-trip-planner-android)
+[inclusive-trip-planner-frontend](https://github.com/DavidCC812/inclusive-trip-planner-frontend)
 
 It supports Firebase authentication and exposes secured REST endpoints used by the mobile app via Retrofit. The mobile app exchanges Firebase tokens for backend JWTs to authorize all user actions.
 
