@@ -126,9 +126,8 @@ It supports Firebase authentication and exposes secured REST endpoints used by t
 
 To run integration tests:
 
-    ```bash
+   ```bash
    ./mvnw test
-
    ```
 
 Tests are defined with `@SpringBootTest` and cover:
