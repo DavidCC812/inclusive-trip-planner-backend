@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="add-user-settings-demo" author="david">
+
+        <!-- receive_offers: true -->
+        <insert tableName="user_settings">
+            <column name="id" value="99990000-0000-0000-0000-000000003001"/>
+            <column name="user_id" value="00000000-0000-0000-0000-000000009999"/>
+            <column name="setting_id" value="00000000-0000-0000-0000-000000000301"/>
+            <column name="value" value="true"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+
+        <!-- notify_trip_completion: true -->
+        <insert tableName="user_settings">
+            <column name="id" value="99990000-0000-0000-0000-000000003002"/>
+            <column name="user_id" value="00000000-0000-0000-0000-000000009999"/>
+            <column name="setting_id" value="00000000-0000-0000-0000-000000000302"/>
+            <column name="value" value="true"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+
+        <!-- alert_accessibility: false -->
+        <insert tableName="user_settings">
+            <column name="id" value="99990000-0000-0000-0000-000000003003"/>
+            <column name="user_id" value="00000000-0000-0000-0000-000000009999"/>
+            <column name="setting_id" value="00000000-0000-0000-0000-000000000303"/>
+            <column name="value" value="false"/>
+            <column name="created_at" valueDate="2025-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-01T00:00:00"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

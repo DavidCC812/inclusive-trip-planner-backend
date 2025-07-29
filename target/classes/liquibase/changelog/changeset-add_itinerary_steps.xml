@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="overwrite-louvre-itinerary-steps" author="david">
+        <delete tableName="itinerary_steps">
+            <where>itinerary_id='11111111-1111-1111-1111-111111111111'</where>
+        </delete>
+
+        <insert tableName="itinerary_steps">
+            <column name="id" value="aaaaaaa1-aaaa-aaaa-aaaa-aaaaaaaaaaa1"/>
+            <column name="itinerary_id" value="11111111-1111-1111-1111-111111111111"/>
+            <column name="step_index" valueNumeric="1"/>
+            <column name="title" value="Use the Wheelchair Entrance"/>
+            <column name="description" value="Skip the Pyramid lines—head directly to the priority access lane reserved for wheelchair users (entrance near Passage Richelieu)."/>
+            <column name="latitude" valueNumeric="48.8610"/>
+            <column name="longitude" valueNumeric="2.3358"/>
+            <column name="created_at" valueDate="2024-01-01T09:00:00"/>
+            <column name="updated_at" valueDate="2024-01-01T09:00:00"/>
+        </insert>
+
+        <insert tableName="itinerary_steps">
+            <column name="id" value="aaaaaaa2-aaaa-aaaa-aaaa-aaaaaaaaaaa2"/>
+            <column name="itinerary_id" value="11111111-1111-1111-1111-111111111111"/>
+            <column name="step_index" valueNumeric="2"/>
+            <column name="title" value="Collect Accessible Route Map"/>
+            <column name="description" value="Pick up an accessibility route map at the information desk—these maps highlight elevators, restrooms, and step-free paths."/>
+            <column name="latitude" valueNumeric="48.8609"/>
+            <column name="longitude" valueNumeric="2.3364"/>
+            <column name="created_at" valueDate="2024-01-01T09:15:00"/>
+            <column name="updated_at" valueDate="2024-01-01T09:15:00"/>
+        </insert>
+
+        <insert tableName="itinerary_steps">
+            <column name="id" value="aaaaaaa3-aaaa-aaaa-aaaa-aaaaaaaaaaa3"/>
+            <column name="itinerary_id" value="11111111-1111-1111-1111-111111111111"/>
+            <column name="step_index" valueNumeric="3"/>
+            <column name="title" value="View the Mona Lisa"/>
+            <column name="description" value="Use the designated wheelchair viewing area for an unobstructed, close look at the Mona Lisa without crowds."/>
+            <column name="latitude" valueNumeric="48.8606"/>
+            <column name="longitude" valueNumeric="2.3376"/>
+            <column name="created_at" valueDate="2024-01-01T09:45:00"/>
+            <column name="updated_at" valueDate="2024-01-01T09:45:00"/>
+        </insert>
+
+        <insert tableName="itinerary_steps">
+            <column name="id" value="aaaaaaa4-aaaa-aaaa-aaaa-aaaaaaaaaaa4"/>
+            <column name="itinerary_id" value="11111111-1111-1111-1111-111111111111"/>
+            <column name="step_index" valueNumeric="4"/>
+            <column name="title" value="Follow Step-Free Routes"/>
+            <column name="description" value="Use the tactile markers and signage to follow a barrier-free path between Denon and Sully wings. Avoid closed elevators—check signage."/>
+            <column name="latitude" valueNumeric="48.8608"/>
+            <column name="longitude" valueNumeric="2.3369"/>
+            <column name="created_at" valueDate="2024-01-01T10:15:00"/>
+            <column name="updated_at" valueDate="2024-01-01T10:15:00"/>
+        </insert>
+
+        <insert tableName="itinerary_steps">
+            <column name="id" value="aaaaaaa5-aaaa-aaaa-aaaa-aaaaaaaaaaa5"/>
+            <column name="itinerary_id" value="11111111-1111-1111-1111-111111111111"/>
+            <column name="step_index" valueNumeric="5"/>
+            <column name="title" value="Break &amp; Restroom Stop"/>
+            <column name="description" value="Rest at one of the accessible cafés or use nearby adapted restrooms—both are clearly marked on your accessibility map."/>
+            <column name="latitude" valueNumeric="48.8607"/>
+            <column name="longitude" valueNumeric="2.3370"/>
+            <column name="created_at" valueDate="2024-01-01T10:45:00"/>
+            <column name="updated_at" valueDate="2024-01-01T10:45:00"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
