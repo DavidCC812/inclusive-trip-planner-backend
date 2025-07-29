@@ -176,4 +176,3 @@ To verify availability, you can check the health endpoint:
 **David Cuahonte Cuevas**  
 [GitHub](https://github.com/DavidCC812)  
 [LinkedIn](https://www.linkedin.com/in/david-cuahonte-527781221/)
->>>>>>> Stashed changes
