@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="add-available-country-paris" author="david">
+
+        <!-- Available country: Paris -->
+        <insert tableName="countries">
+            <column name="id" value="00000000-0000-0000-0000-000000000010"/>
+            <column name="name" value="Paris"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="created_at" valueDate="2024-01-01T00:00:00"/>
+            <column name="updated_at" valueDate="2024-01-01T00:00:00"/>
+        </insert>
+
+        <!-- Unavailable (coming soon) countries -->
+        <insert tableName="countries">
+            <column name="id" value="00000000-0000-0000-0000-000000000011"/>
+            <column name="name" value="Rome"/>
+            <column name="available" valueBoolean="false"/>
+            <column name="created_at" valueDate="2024-01-02T00:00:00"/>
+            <column name="updated_at" valueDate="2024-01-02T00:00:00"/>
+        </insert>
+
+        <insert tableName="countries">
+            <column name="id" value="00000000-0000-0000-0000-000000000012"/>
+            <column name="name" value="Tokyo"/>
+            <column name="available" valueBoolean="false"/>
+            <column name="created_at" valueDate="2024-01-03T00:00:00"/>
+            <column name="updated_at" valueDate="2024-01-03T00:00:00"/>
+        </insert>
+
+        <insert tableName="countries">
+            <column name="id" value="00000000-0000-0000-0000-000000000013"/>
+            <column name="name" value="New York"/>
+            <column name="available" valueBoolean="false"/>
+            <column name="created_at" valueDate="2024-01-04T00:00:00"/>
+            <column name="updated_at" valueDate="2024-01-04T00:00:00"/>
+        </insert>
+
+        <insert tableName="countries">
+            <column name="id" value="00000000-0000-0000-0000-000000000014"/>
+            <column name="name" value="Barcelona"/>
+            <column name="available" valueBoolean="false"/>
+            <column name="created_at" valueDate="2024-01-05T00:00:00"/>
+            <column name="updated_at" valueDate="2024-01-05T00:00:00"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

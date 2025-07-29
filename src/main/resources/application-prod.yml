@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driverClassName: org.postgresql.Driver
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      minimumIdle: 0
+      max-lifetime: 1800000
+      maximum-pool-size: 4
+
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:/liquibase/changelog-master.xml
+    default-schema: public
+    user: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
