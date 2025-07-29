@@ -123,6 +123,8 @@ This backend is consumed by the official Android frontend:
 
 It supports Firebase authentication and exposes secured REST endpoints used by the mobile app via Retrofit. The mobile app exchanges Firebase tokens for backend JWTs to authorize all user actions.
 
+To observe the backend in action (e.g. receiving requests, testing flows), make sure the mobile app is running and pointing to the correct base URL — either `http://localhost:8080` for local testing or the Render deployment for remote.
+
 ## Testing
 
 To run integration tests:
