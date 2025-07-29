@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="add-user-selected-destinations-demo" author="david">
+
+        <!-- Louvre Museum -->
+        <insert tableName="user_selected_destinations">
+            <column name="id" value="99990000-0000-0000-0000-000000005001"/>
+            <column name="user_id" value="00000000-0000-0000-0000-000000009999"/>
+            <column name="destination_id" value="00000000-0000-0000-0000-000000000201"/>
+            <column name="created_at" valueDate="2025-01-15T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-15T00:00:00"/>
+        </insert>
+
+        <!-- Palace of Versailles -->
+        <insert tableName="user_selected_destinations">
+            <column name="id" value="99990000-0000-0000-0000-000000005002"/>
+            <column name="user_id" value="00000000-0000-0000-0000-000000009999"/>
+            <column name="destination_id" value="00000000-0000-0000-0000-000000000202"/>
+            <column name="created_at" valueDate="2025-01-15T00:00:00"/>
+            <column name="updated_at" valueDate="2025-01-15T00:00:00"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
