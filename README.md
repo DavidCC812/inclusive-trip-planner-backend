@@ -71,36 +71,37 @@ This structure ensures a clear separation between API exposure, business rules, 
 
 ## Setup Instructions
 
-1. Clone the Repository
+1. **Clone the Repository**
 
    ```bash
-   git clone <https://github.com/yourusername/inclusive-trip-planner-backend.git>  
+   git clone https://github.com/DavidCC812/inclusive-trip-planner-backend.git
    cd inclusive-trip-planner-backend
    ```
 
-2. Configure Environment
+2. **Configure Environment**
 
-No manual environment setup is required for local development.
+   No manual environment setup is required for local development.  
+   The backend loads its configuration from `application.yml`, and Docker Compose provides default database credentials.
 
-The backend loads its configuration from `application.yml`, and Docker Compose provides default database credentials for local use.
+   In production (e.g. on Render), the following environment variables must be defined:
 
-In production (e.g. on Render), the following environment variables must be defined in the Render dashboard:
+   - `JWT_SECRET`
+   - `SPRING_DATASOURCE_URL`
+   - `SPRING_DATASOURCE_USERNAME`
+   - `SPRING_DATASOURCE_PASSWORD`
+   - `SPRING_PROFILES_ACTIVE`
 
-- `JWT_SECRET`
-- `SPRING_DATASOURCE_URL`
-- `SPRING_DATASOURCE_USERNAME`
-- `SPRING_DATASOURCE_PASSWORD`
-- `SPRING_PROFILES_ACTIVE`
+3. **Run Locally with Docker**
 
-3. Run Locally with Docker
-
+   ```bash
    docker compose -f docker/docker-compose.yaml up --build
+   ```
 
-   The app will start on `http://localhost:8080` and connect to the linked PostgreSQL container.
+   The app will start on [http://localhost:8080](http://localhost:8080) and connect to the linked PostgreSQL container.
 
-4. Health Check Endpoint
+4. **Health Check Endpoint**
 
-   <http://localhost:8080/health>
+   Visit [http://localhost:8080/health](http://localhost:8080/health) to verify the backend is running.
 
 ## Usage
 
